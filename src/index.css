@@ -8,20 +8,45 @@ All colors MUST be HSL.
 
 @layer base {
   :root {
-    --background: 0 0% 100%;
-    --foreground: 222.2 84% 4.9%;
+    --background: 220 30% 98%;
+    --foreground: 228 25% 15%;
 
     --card: 0 0% 100%;
-    --card-foreground: 222.2 84% 4.9%;
+    --card-foreground: 228 25% 15%;
 
     --popover: 0 0% 100%;
-    --popover-foreground: 222.2 84% 4.9%;
+    --popover-foreground: 228 25% 15%;
 
-    --primary: 222.2 47.4% 11.2%;
-    --primary-foreground: 210 40% 98%;
+    --primary: 210 80% 60%;
+    --primary-foreground: 0 0% 100%;
 
-    --secondary: 210 40% 96.1%;
-    --secondary-foreground: 222.2 47.4% 11.2%;
+    --secondary: 150 30% 95%;
+    --secondary-foreground: 228 25% 25%;
+
+    /* Wellness specific colors */
+    --wellness-primary: 210 80% 60%;
+    --wellness-secondary: 150 60% 70%;
+    --wellness-accent: 280 60% 75%;
+    --wellness-calm: 200 50% 85%;
+    --wellness-energy: 40 90% 75%;
+    --wellness-focus: 260 40% 70%;
+    
+    /* Mood colors */
+    --mood-excellent: 120 70% 60%;
+    --mood-good: 90 60% 65%;
+    --mood-neutral: 45 80% 70%;
+    --mood-low: 25 70% 65%;
+    --mood-poor: 0 65% 65%;
+
+    /* Gradients */
+    --gradient-wellness: linear-gradient(135deg, hsl(var(--wellness-primary)), hsl(var(--wellness-secondary)));
+    --gradient-calm: linear-gradient(135deg, hsl(var(--wellness-calm)), hsl(var(--wellness-accent)));
+    --gradient-card: linear-gradient(145deg, hsl(0 0% 100% / 0.8), hsl(0 0% 100% / 0.4));
+    
+    /* Shadows */
+    --shadow-wellness: 0 8px 32px hsl(var(--wellness-primary) / 0.15);
+    --shadow-card: 0 4px 20px hsl(228 25% 15% / 0.08);
+    --shadow-mood: 0 6px 24px hsl(var(--wellness-accent) / 0.2);
 
     --muted: 210 40% 96.1%;
     --muted-foreground: 215.4 16.3% 46.9%;
@@ -56,11 +81,15 @@ All colors MUST be HSL.
   }
 
   .dark {
-    --background: 222.2 84% 4.9%;
-    --foreground: 210 40% 98%;
+    --background: 228 25% 8%;
+    --foreground: 220 30% 95%;
 
-    --card: 222.2 84% 4.9%;
-    --card-foreground: 210 40% 98%;
+    --card: 228 25% 12%;
+    --card-foreground: 220 30% 95%;
+    
+    --wellness-primary: 210 70% 55%;
+    --wellness-secondary: 150 50% 60%;
+    --wellness-accent: 280 50% 65%;
 
     --popover: 222.2 84% 4.9%;
     --popover-foreground: 210 40% 98%;

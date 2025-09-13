@@ -19,6 +19,21 @@ export default {
         ring: "hsl(var(--ring))",
         background: "hsl(var(--background))",
         foreground: "hsl(var(--foreground))",
+        wellness: {
+          primary: "hsl(var(--wellness-primary))",
+          secondary: "hsl(var(--wellness-secondary))",
+          accent: "hsl(var(--wellness-accent))",
+          calm: "hsl(var(--wellness-calm))",
+          energy: "hsl(var(--wellness-energy))",
+          focus: "hsl(var(--wellness-focus))",
+        },
+        mood: {
+          excellent: "hsl(var(--mood-excellent))",
+          good: "hsl(var(--mood-good))",
+          neutral: "hsl(var(--mood-neutral))",
+          low: "hsl(var(--mood-low))",
+          poor: "hsl(var(--mood-poor))",
+        },
         primary: {
           DEFAULT: "hsl(var(--primary))",
           foreground: "hsl(var(--primary-foreground))",
@@ -62,6 +77,16 @@ export default {
         lg: "var(--radius)",
         md: "calc(var(--radius) - 2px)",
         sm: "calc(var(--radius) - 4px)",
+      },
+      backgroundImage: {
+        'gradient-wellness': 'var(--gradient-wellness)',
+        'gradient-calm': 'var(--gradient-calm)',
+        'gradient-card': 'var(--gradient-card)',
+      },
+      boxShadow: {
+        'wellness': 'var(--shadow-wellness)',
+        'card-wellness': 'var(--shadow-card)',
+        'mood': 'var(--shadow-mood)',
       },
       keyframes: {
         "accordion-down": {
